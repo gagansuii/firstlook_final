@@ -129,7 +129,38 @@ function LandingPage() {
         <header className="landing-hero" id="main-content">
           <div className="container hero-content">
             <p className="hero-eyebrow fade-in">Background Verification Platform</p>
-            <h1 className="hero-title fade-in">Verify Credentials.<br />Build Trust.</h1>
+
+            {/* Curved brand text */}
+            <h1 className="sr-only">Firstlookc — Background Verification Platform</h1>
+            <div className="hero-brand-arc fade-in" role="img" aria-label="FIRSTLOOKC">
+              <svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="brand-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stopColor="#ff4d4d" />
+                    <stop offset="100%" stopColor="#ff0080" />
+                  </linearGradient>
+                  <filter id="brand-glow" x="-10%" y="-40%" width="120%" height="180%">
+                    <feGaussianBlur stdDeviation="7" result="blur" />
+                    <feMerge>
+                      <feMergeNode in="blur" />
+                      <feMergeNode in="SourceGraphic" />
+                    </feMerge>
+                  </filter>
+                  <path id="brand-arc" d="M 20,175 Q 400,5 780,175" />
+                </defs>
+                <text
+                  fontFamily="'Bebas Neue', 'Arial Black', sans-serif"
+                  fontSize="90"
+                  letterSpacing="10"
+                  fill="url(#brand-gradient)"
+                  filter="url(#brand-glow)"
+                >
+                  <textPath href="#brand-arc" textAnchor="middle" startOffset="50%">
+                    FIRSTLOOKC
+                  </textPath>
+                </text>
+              </svg>
+            </div>
             <p className="hero-subtitle fade-in">
               Verify certificates flawlessly. Connect with our team. Manage your documents securely.
             </p>
