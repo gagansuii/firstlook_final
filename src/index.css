@@ -1,4 +1,9 @@
-﻿:root {
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px; /* offset for sticky nav */
+}
+
+:root {
   font-family: "Poppins", sans-serif;
   line-height: 1.5;
   font-weight: 400;
