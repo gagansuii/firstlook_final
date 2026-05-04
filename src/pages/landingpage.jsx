@@ -105,8 +105,6 @@ function LandingPage() {
         {/* ── Navbar ── */}
         <nav className={`landing-nav${scrolled ? " nav-scrolled" : ""}`} aria-label="Main navigation">
           <div className="container nav-content">
-            <a href="#" className="nav-logo" aria-label="Firstlookc — go to top">Firstlookc</a>
-
             <button
               className={`hamburger${menuOpen ? " open" : ""}`}
               aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
@@ -139,13 +137,6 @@ function LandingPage() {
                     <stop offset="0%" stopColor="#ff4d4d" />
                     <stop offset="100%" stopColor="#ff0080" />
                   </linearGradient>
-                  <filter id="brand-glow" x="-10%" y="-40%" width="120%" height="180%">
-                    <feGaussianBlur stdDeviation="7" result="blur" />
-                    <feMerge>
-                      <feMergeNode in="blur" />
-                      <feMergeNode in="SourceGraphic" />
-                    </feMerge>
-                  </filter>
                   <path id="brand-arc" d="M 20,175 Q 400,5 780,175" />
                 </defs>
                 <text
@@ -153,7 +144,6 @@ function LandingPage() {
                   fontSize="90"
                   letterSpacing="10"
                   fill="url(#brand-gradient)"
-                  filter="url(#brand-glow)"
                 >
                   <textPath href="#brand-arc" textAnchor="middle" startOffset="50%">
                     FIRSTLOOKC
