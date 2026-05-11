@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://firstlookc.com/sitemap.xml
+Sitemap: https://nxtlookc.com/sitemap.xml

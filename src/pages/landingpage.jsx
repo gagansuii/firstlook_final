@@ -28,23 +28,20 @@ const steps = [
   ["4", "Verified Results", "Download detailed verification reports instantly."],
 ];
 
-// Replace with your Formspree endpoint — sign up free at https://formspree.io/
 const FORMSPREE_ENDPOINT = "https://formspree.io/f/xwvylgae";
 
 function LandingPage() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [form, setForm] = useState({ name: "", email: "", company: "", message: "" });
-  const [formStatus, setFormStatus] = useState("idle"); // idle | sending | success | error
+  const [formStatus, setFormStatus] = useState("idle");
 
-  // Sticky nav background on scroll
   useEffect(() => {
     const handler = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handler, { passive: true });
     return () => window.removeEventListener("scroll", handler);
   }, []);
 
-  // Scroll-triggered fade-in
   useEffect(() => {
     const els = document.querySelectorAll(".fade-in");
     const obs = new IntersectionObserver(
@@ -55,7 +52,6 @@ function LandingPage() {
     return () => obs.disconnect();
   }, []);
 
-  // ESC closes mobile menu
   useEffect(() => {
     if (!menuOpen) return;
     const handler = (e) => { if (e.key === "Escape") setMenuOpen(false); };
@@ -63,7 +59,6 @@ function LandingPage() {
     return () => document.removeEventListener("keydown", handler);
   }, [menuOpen]);
 
-  // Click outside closes mobile menu
   useEffect(() => {
     if (!menuOpen) return;
     const handler = (e) => { if (!e.target.closest(".nav-content")) setMenuOpen(false); };
@@ -102,7 +97,6 @@ function LandingPage() {
       <a href="#main-content" className="skip-link">Skip to main content</a>
 
       <div className="landing">
-        {/* ── Navbar ── */}
         <nav className={`landing-nav${scrolled ? " nav-scrolled" : ""}`} aria-label="Main navigation">
           <div className="container nav-content">
             <button
@@ -123,14 +117,12 @@ function LandingPage() {
           </div>
         </nav>
 
-        {/* ── Hero ── */}
         <header className="landing-hero" id="main-content">
           <div className="container hero-content">
             <p className="hero-eyebrow fade-in">Background Verification Platform</p>
 
-            {/* Curved brand text */}
-            <h1 className="sr-only">Firstlookc — Background Verification Platform</h1>
-            <div className="hero-brand-arc fade-in" role="img" aria-label="FIRSTLOOKC">
+            <h1 className="sr-only">Nxtlookc — Background Verification Platform</h1>
+            <div className="hero-brand-arc fade-in" role="img" aria-label="NXTLOOKC">
               <svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                   <linearGradient id="brand-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -146,7 +138,7 @@ function LandingPage() {
                   fill="url(#brand-gradient)"
                 >
                   <textPath href="#brand-arc" textAnchor="middle" startOffset="50%">
-                    FIRSTLOOKC
+                    NXTLOOKC
                   </textPath>
                 </text>
               </svg>
@@ -161,7 +153,6 @@ function LandingPage() {
           </div>
         </header>
 
-        {/* ── Clients ── */}
         <section className="landing-clients" aria-label="Clients">
           <div className="container">
             <h2 className="clients-title">Trusted by Leading Organizations</h2>
@@ -178,10 +169,9 @@ function LandingPage() {
           </div>
         </section>
 
-        {/* ── Features ── */}
         <section className="landing-features" id="features" aria-labelledby="features-heading">
           <div className="container">
-            <h2 className="section-title fade-in" id="features-heading">Why Choose Firstlookc?</h2>
+            <h2 className="section-title fade-in" id="features-heading">Why Choose Nxtlookc?</h2>
             <div className="features-grid">
               {features.map(([icon, title, desc], i) => (
                 <div className="feature-card fade-in" key={i} style={{ transitionDelay: `${i * 60}ms` }}>
@@ -194,7 +184,6 @@ function LandingPage() {
           </div>
         </section>
 
-        {/* ── Process ── */}
         <section className="landing-process" id="process" aria-labelledby="process-heading">
           <div className="container">
             <h2 className="section-title fade-in" id="process-heading">How It Works</h2>
@@ -210,11 +199,10 @@ function LandingPage() {
           </div>
         </section>
 
-        {/* ── CTA ── */}
         <section className="landing-cta" aria-label="Call to action">
           <div className="container fade-in">
             <h2 className="cta-title">Ready to Get Started?</h2>
-            <p className="cta-subtitle">Join organisations worldwide using Firstlookc.</p>
+            <p className="cta-subtitle">Join organisations worldwide using Nxtlookc.</p>
             <div className="cta-actions">
               <a className="btn btn-primary" href="#contact">Request a Demo</a>
               <a className="btn btn-secondary" href="#features">Explore Features</a>
@@ -222,7 +210,6 @@ function LandingPage() {
           </div>
         </section>
 
-        {/* ── Contact ── */}
         <section className="landing-contact" id="contact" aria-labelledby="contact-heading">
           <div className="container contact-grid">
             <div className="contact-copy fade-in">
@@ -293,7 +280,7 @@ function LandingPage() {
                   {formStatus === "error" && (
                     <p className="form-error" role="alert">
                       Something went wrong. Please try again or email{" "}
-                      <a href="mailto:hello@firstlookc.com">hello@firstlookc.com</a>.
+                      <a href="mailto:hello@nxtlookc.com">hello@nxtlookc.com</a>.
                     </p>
                   )}
                   <button
@@ -305,7 +292,7 @@ function LandingPage() {
                   </button>
                   <p className="form-note">
                     Or email us directly at{" "}
-                    <a href="mailto:hello@firstlookc.com">hello@firstlookc.com</a>
+                    <a href="mailto:hello@nxtlookc.com">hello@nxtlookc.com</a>
                   </p>
                 </form>
               )}
@@ -313,11 +300,10 @@ function LandingPage() {
           </div>
         </section>
 
-        {/* ── Footer ── */}
         <footer className="landing-footer">
           <div className="container footer-content">
             <div className="footer-top">
-              <span className="footer-logo">Firstlookc</span>
+              <span className="footer-logo">Nxtlookc</span>
               <nav className="footer-nav" aria-label="Footer navigation">
                 <a href="#features">Features</a>
                 <a href="#process">Process</a>
@@ -325,7 +311,7 @@ function LandingPage() {
               </nav>
             </div>
             <div className="footer-bottom">
-              <p>© 2026 Firstlookc. All rights reserved.</p>
+              <p>© 2026 Nxtlookc. All rights reserved.</p>
               <p className="ceo-name">CEO: Nagesh Shastri</p>
             </div>
           </div>
