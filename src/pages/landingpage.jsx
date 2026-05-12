@@ -121,8 +121,8 @@ function LandingPage() {
           <div className="container hero-content">
             <p className="hero-eyebrow fade-in">Background Verification Platform</p>
 
-            <h1 className="sr-only">Nxtlookc — Background Verification Platform</h1>
-            <div className="hero-brand-arc fade-in" role="img" aria-label="NXTLOOKC">
+            <h1 className="sr-only">Nextlook — Background Verification Platform</h1>
+            <div className="hero-brand-arc fade-in" role="img" aria-label="NEXTLOOK">
               <svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
                 <defs>
                   <linearGradient id="brand-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -138,7 +138,7 @@ function LandingPage() {
                   fill="url(#brand-gradient)"
                 >
                   <textPath href="#brand-arc" textAnchor="middle" startOffset="50%">
-                    NXTLOOKC
+                    NEXTLOOK
                   </textPath>
                 </text>
               </svg>
@@ -171,7 +171,7 @@ function LandingPage() {
 
         <section className="landing-features" id="features" aria-labelledby="features-heading">
           <div className="container">
-            <h2 className="section-title fade-in" id="features-heading">Why Choose Nxtlookc?</h2>
+            <h2 className="section-title fade-in" id="features-heading">Why Choose Nextlook?</h2>
             <div className="features-grid">
               {features.map(([icon, title, desc], i) => (
                 <div className="feature-card fade-in" key={i} style={{ transitionDelay: `${i * 60}ms` }}>
@@ -202,7 +202,7 @@ function LandingPage() {
         <section className="landing-cta" aria-label="Call to action">
           <div className="container fade-in">
             <h2 className="cta-title">Ready to Get Started?</h2>
-            <p className="cta-subtitle">Join organisations worldwide using Nxtlookc.</p>
+            <p className="cta-subtitle">Join organisations worldwide using Nextlook.</p>
             <div className="cta-actions">
               <a className="btn btn-primary" href="#contact">Request a Demo</a>
               <a className="btn btn-secondary" href="#features">Explore Features</a>
@@ -280,7 +280,7 @@ function LandingPage() {
                   {formStatus === "error" && (
                     <p className="form-error" role="alert">
                       Something went wrong. Please try again or email{" "}
-                      <a href="mailto:hello@nxtlookc.com">hello@nxtlookc.com</a>.
+                      <a href="mailto:hello@nextlook.com">hello@nextlook.com</a>.
                     </p>
                   )}
                   <button
@@ -292,7 +292,7 @@ function LandingPage() {
                   </button>
                   <p className="form-note">
                     Or email us directly at{" "}
-                    <a href="mailto:hello@nxtlookc.com">hello@nxtlookc.com</a>
+                    <a href="mailto:hello@nextlook.com">hello@nextlook.com</a>
                   </p>
                 </form>
               )}
@@ -303,7 +303,7 @@ function LandingPage() {
         <footer className="landing-footer">
           <div className="container footer-content">
             <div className="footer-top">
-              <span className="footer-logo">Nxtlookc</span>
+              <span className="footer-logo">Nextlook</span>
               <nav className="footer-nav" aria-label="Footer navigation">
                 <a href="#features">Features</a>
                 <a href="#process">Process</a>
@@ -311,7 +311,7 @@ function LandingPage() {
               </nav>
             </div>
             <div className="footer-bottom">
-              <p>© 2026 Nxtlookc. All rights reserved.</p>
+              <p>© 2026 Nextlook. All rights reserved.</p>
               <p className="ceo-name">CEO: Nagesh Shastri</p>
             </div>
           </div>
