@@ -165,14 +165,15 @@
 }
 
 .btn-primary {
-  background: linear-gradient(120deg, #ff4d4d, #ff0080);
+  background: #e50914;
   color: #fff;
-  box-shadow: 0 12px 30px rgba(255, 77, 77, 0.25);
+  box-shadow: 0 8px 24px rgba(229, 9, 20, 0.35);
 }
 
 .btn-primary:hover:not(:disabled) {
+  background: #c8000f;
   transform: translateY(-2px);
-  box-shadow: 0 16px 36px rgba(255, 77, 77, 0.35);
+  box-shadow: 0 14px 32px rgba(229, 9, 20, 0.45);
 }
 
 .btn-secondary {
@@ -202,10 +203,6 @@
   border-radius: 4px;
   padding: 16px 40px;
   font-size: 17px;
-  background: linear-gradient(120deg, #ff4d4d, #ff0080);
-  color: #fff;
-  border-color: transparent;
-  box-shadow: 0 12px 30px rgba(255, 77, 77, 0.25);
 }
 
 /* ===== SCREEN-READER ONLY ===== */
