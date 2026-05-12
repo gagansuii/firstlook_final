@@ -99,6 +99,8 @@ function LandingPage() {
       <div className="landing">
         <nav className={`landing-nav${scrolled ? " nav-scrolled" : ""}`} aria-label="Main navigation">
           <div className="container nav-content">
+            <span className="nav-logo">Nextlook</span>
+
             <button
               className={`hamburger${menuOpen ? " open" : ""}`}
               aria-label={menuOpen ? "Close navigation menu" : "Open navigation menu"}
@@ -112,7 +114,7 @@ function LandingPage() {
             <div id="nav-actions" className={`nav-actions${menuOpen ? " nav-open" : ""}`} role="menubar">
               <a className="nav-link" href="#features" onClick={closeMenu} role="menuitem">Features</a>
               <a className="nav-link" href="#process" onClick={closeMenu} role="menuitem">Process</a>
-              <a className="btn btn-secondary" href="#contact" onClick={closeMenu} role="menuitem">Contact</a>
+              <a className="btn btn-primary" href="#contact" onClick={closeMenu} role="menuitem">Contact</a>
             </div>
           </div>
         </nav>
@@ -122,33 +124,12 @@ function LandingPage() {
             <p className="hero-eyebrow fade-in">Background Verification Platform</p>
 
             <h1 className="sr-only">Nextlook — Background Verification Platform</h1>
-            <div className="hero-brand-arc fade-in" role="img" aria-label="NEXTLOOK">
-              <svg viewBox="0 0 800 200" xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                  <linearGradient id="brand-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" stopColor="#ff4d4d" />
-                    <stop offset="100%" stopColor="#ff0080" />
-                  </linearGradient>
-                  <path id="brand-arc" d="M 20,175 Q 400,5 780,175" />
-                </defs>
-                <text
-                  fontFamily="'Bebas Neue', 'Arial Black', sans-serif"
-                  fontSize="90"
-                  letterSpacing="10"
-                  fill="url(#brand-gradient)"
-                >
-                  <textPath href="#brand-arc" textAnchor="middle" startOffset="50%">
-                    NEXTLOOK
-                  </textPath>
-                </text>
-              </svg>
-            </div>
             <p className="hero-subtitle fade-in">
               Verify certificates flawlessly. Connect with our team. Manage your documents securely.
             </p>
             <div className="hero-actions fade-in">
-              <a className="btn btn-primary" href="#contact">Get a Demo</a>
-              <a className="btn btn-ghost" href="#process">See How It Works</a>
+              <a className="btn btn-primary btn-rect" href="#contact">Get a Demo</a>
+              <a className="btn btn-ghost btn-rect" href="#process">See How It Works</a>
             </div>
           </div>
         </header>
@@ -204,8 +185,8 @@ function LandingPage() {
             <h2 className="cta-title">Ready to Get Started?</h2>
             <p className="cta-subtitle">Join organisations worldwide using Nextlook.</p>
             <div className="cta-actions">
-              <a className="btn btn-primary" href="#contact">Request a Demo</a>
-              <a className="btn btn-secondary" href="#features">Explore Features</a>
+              <a className="btn btn-primary btn-rect" href="#contact">Request a Demo</a>
+              <a className="btn btn-secondary btn-rect" href="#features">Explore Features</a>
             </div>
           </div>
         </section>
@@ -312,7 +293,6 @@ function LandingPage() {
             </div>
             <div className="footer-bottom">
               <p>© 2026 Nextlook. All rights reserved.</p>
-              <p className="ceo-name">CEO: Nagesh Shastri</p>
             </div>
           </div>
         </footer>

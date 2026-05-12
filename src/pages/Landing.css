@@ -85,8 +85,17 @@
 .nav-content {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
   position: relative;
+}
+
+.nav-logo {
+  font-family: "Bebas Neue", "Poppins", sans-serif;
+  font-size: 28px;
+  letter-spacing: 2px;
+  color: #e50914;
+  text-transform: uppercase;
+  user-select: none;
 }
 
 .nav-actions {
@@ -191,6 +200,12 @@
   width: 100%;
 }
 
+.btn-rect {
+  border-radius: 10px;
+  padding: 16px 40px;
+  font-size: 17px;
+}
+
 /* ===== SCREEN-READER ONLY ===== */
 
 .sr-only {
@@ -241,9 +256,9 @@
 }
 
 .hero-subtitle {
-  font-size: 18px;
+  font-size: 22px;
   opacity: 0.8;
-  max-width: 580px;
+  max-width: 620px;
   margin: 0 auto;
   line-height: 1.7;
 }
@@ -344,15 +359,15 @@
 
 .feature-card h3 {
   margin: 0 0 8px;
-  font-size: 16px;
+  font-size: 19px;
   font-weight: 600;
 }
 
 .feature-card p {
   margin: 0;
-  font-size: 14px;
+  font-size: 16px;
   opacity: 0.75;
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
 .feature-icon {
@@ -386,15 +401,15 @@
 
 .process-step h3 {
   margin: 0 0 8px;
-  font-size: 16px;
+  font-size: 19px;
   font-weight: 600;
 }
 
 .process-step p {
   margin: 0;
-  font-size: 14px;
+  font-size: 16px;
   opacity: 0.75;
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
 .step-number {
@@ -425,7 +440,7 @@
 .cta-subtitle {
   opacity: 0.8;
   margin: 0 0 28px;
-  font-size: 16px;
+  font-size: 19px;
 }
 
 .cta-actions {
@@ -458,7 +473,7 @@
 .contact-subtitle {
   opacity: 0.8;
   margin: 0 0 28px;
-  font-size: 15px;
+  font-size: 17px;
   line-height: 1.75;
 }
 
@@ -474,7 +489,7 @@
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  font-size: 15px;
+  font-size: 17px;
   opacity: 0.9;
 }
 
