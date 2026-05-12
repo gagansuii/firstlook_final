@@ -199,9 +199,13 @@
 }
 
 .btn-rect {
-  border-radius: 10px;
+  border-radius: 4px;
   padding: 16px 40px;
   font-size: 17px;
+  background: linear-gradient(120deg, #ff4d4d, #ff0080);
+  color: #fff;
+  border-color: transparent;
+  box-shadow: 0 12px 30px rgba(255, 77, 77, 0.25);
 }
 
 /* ===== SCREEN-READER ONLY ===== */
