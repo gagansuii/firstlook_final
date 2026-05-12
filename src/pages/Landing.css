@@ -90,16 +90,10 @@
 }
 
 .nav-logo {
-  font-family: "Bebas Neue", "Arial Black", sans-serif;
-  font-size: 52px;
-  letter-spacing: 1px;
-  color: #e50914;
-  text-transform: uppercase;
-  user-select: none;
-  display: inline-block;
-  transform: skewX(-8deg);
-  line-height: 1;
-  text-shadow: 3px 3px 0px rgba(120, 0, 0, 0.5);
+  width: 190px;
+  height: auto;
+  display: block;
+  flex-shrink: 0;
 }
 
 .nav-actions {

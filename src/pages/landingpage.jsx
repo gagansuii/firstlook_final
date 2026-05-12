@@ -99,7 +99,21 @@ function LandingPage() {
       <div className="landing">
         <nav className={`landing-nav${scrolled ? " nav-scrolled" : ""}`} aria-label="Main navigation">
           <div className="container nav-content">
-            <span className="nav-logo">Nextlook</span>
+            <svg className="nav-logo" viewBox="0 0 280 62" xmlns="http://www.w3.org/2000/svg" aria-label="Nextlook">
+              <defs>
+                <path id="nav-arc" d="M 8,54 Q 140,8 272,54" />
+              </defs>
+              <text
+                fontFamily="'Bebas Neue', 'Arial Black', sans-serif"
+                fontSize="46"
+                letterSpacing="2"
+                fill="#e50914"
+              >
+                <textPath href="#nav-arc" textAnchor="middle" startOffset="50%">
+                  NEXTLOOK
+                </textPath>
+              </text>
+            </svg>
 
             <button
               className={`hamburger${menuOpen ? " open" : ""}`}
