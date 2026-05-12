@@ -247,7 +247,7 @@
 }
 
 .hero-eyebrow {
-  font-size: 13px;
+  font-size: 16px;
   font-weight: 600;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -256,9 +256,9 @@
 }
 
 .hero-subtitle {
-  font-size: 22px;
+  font-size: 26px;
   opacity: 0.8;
-  max-width: 620px;
+  max-width: 680px;
   margin: 0 auto;
   line-height: 1.7;
 }
