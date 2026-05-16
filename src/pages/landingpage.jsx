@@ -1,17 +1,6 @@
 ﻿import { useState, useEffect } from "react";
 import "./Landing.css";
 
-const clients = [
-  ["🏢", "TechCorp"],
-  ["💼", "Global Finance"],
-  ["🏛️", "Enterprise Solutions"],
-  ["🌐", "International Group"],
-  ["⚡", "Innovation Labs"],
-  ["🔷", "Prime Industries"],
-  ["🌟", "Star Enterprises"],
-  ["📊", "Data Systems"],
-];
-
 const features = [
   ["🔒", "Secure Verification", "Flawless certificate verification with enterprise-grade security."],
   ["📁", "Document Management", "Upload, store, and manage all your verification documents in one place."],
@@ -147,22 +136,6 @@ function LandingPage() {
             </div>
           </div>
         </header>
-
-        <section className="landing-clients" aria-label="Clients">
-          <div className="container">
-            <h2 className="clients-title">Trusted by Leading Organizations</h2>
-          </div>
-          <div className="clients-scroll-wrapper" aria-hidden="true">
-            <div className="clients-scroll">
-              {clients.concat(clients).map(([icon, name], i) => (
-                <div className="client-item" key={i}>
-                  <div className="client-logo">{icon}</div>
-                  <span className="client-name">{name}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
 
         <section className="landing-features" id="features" aria-labelledby="features-heading">
           <div className="container">
